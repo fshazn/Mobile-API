@@ -1,0 +1,50 @@
+
+
+.product_grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+    minmax(200px,1fr));
+    padding: 20px;
+    gap: 1rem;
+    justify-items: center;
+}
+
+.card{
+    
+    justify-content: center;
+    align-items: center;
+    background-color: #D0E7D2;
+    border-radius: 10px;
+    height: 25rem;
+    width: 15rem;
+    
+}
+
+.card img{
+    height: 12rem;
+    width: 12rem;
+    margin: 20px auto;
+    border-radius: 15px;
+    display: block;
+
+}
+
+.card_content{
+    padding: 0 15px;
+}
+.title{
+    font-size: 20px;
+}
+
+
+@media (max-width: 480px) {
+    .product_grid {
+      grid-template-columns: 1fr; /* Display a single column in smaller devices */
+      justify-items: center;
+    }
+    .card {
+        height: auto;
+        width: 300px;
+        text-align: center;
+    }
+  }
